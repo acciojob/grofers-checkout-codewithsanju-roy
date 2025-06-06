@@ -1,2 +1,38 @@
 
 /* Your CSS Code here. */
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+caption {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+tr:last-child td {
+  font-weight: bold;
+  background-color: #e8f5e9;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  colo
