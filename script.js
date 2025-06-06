@@ -12,19 +12,16 @@ const getSum = () => {
 
   const table = document.querySelector("table");
   const newRow = document.createElement("tr");
-  const totalCell = document.createElement("td");
+  let totalCell = document.createElement("td"); // changed from const to let
 
-  const totalCell = document.createElement("td");
-totalCell.setAttribute("id", "ans"); // <-- Add this line
-totalCell.setAttribute("colspan", "2");
-totalCell.style.textAlign = "right";
-totalCell.textContent = `Total Price: Rs ${total}`;
-
+  totalCell.setAttribute("colspan", "2");
+  totalCell.setAttribute("id", "ans"); // required by Cypress
+  totalCell.style.textAlign = "right";
+  totalCell.textContent = `Total Price: Rs ${total}`;
 
   newRow.appendChild(totalCell);
   table.appendChild(newRow);
 
-  // Disable the button to prevent multiple total rows
   getSumBtn.disabled = true;
 };
 
